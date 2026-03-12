@@ -2,7 +2,7 @@ import { createContext, useContext, useEffect, useRef, useState } from 'react'
 import { io } from 'socket.io-client'
 
 const SocketContext = createContext(null)
-export const API = 'http://localhost:3001'
+export const API = 'https://squak.io'
 
 export function SocketProvider({ user, children }) {
   const socketRef  = useRef(null)

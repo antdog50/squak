@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
     "server": "node server/index.js",
-    "build": "vite build && electron-builder",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {

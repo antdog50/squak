@@ -1,0 +1,7 @@
+node_modules
+dist
+livekit-server.exe
+*.db
+server/users.db
+server/friends.db
+server/messages.db

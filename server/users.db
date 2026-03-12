@@ -1,0 +1,5 @@
+{"username":"ao","password":"$2a$10$YiW71rPhiZLBupZ2t7AFEeBEUBP50orgIwO49/GoCWxstdIy4HDfC","createdAt":1773256845033,"_id":"4eMCYWhR0LOS0glH"}
+{"username":"aostra","password":"$2a$10$2rE3UKQawjGDbNZMQcfZbe6V6KfQ9im.yjMM5L4Yk7M7t/tbf183W","createdAt":1773256867380,"_id":"cMjAsza31fdHGU96"}
+{"$$indexCreated":{"fieldName":"username","unique":true,"sparse":false}}
+{"$$indexCreated":{"fieldName":"username","unique":true}}
+{"username":"asdasdad","password":"$2a$10$HQZCP73A53/Gfdc.W2T1OeGVKuXWMZzsQQ1isA3DvnG7C.iBy.wVC","createdAt":1773257260391,"_id":"c8VudDiul5OhOjXl"}

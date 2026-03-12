@@ -29,9 +29,9 @@ export default function ChatPanel({ contact, user, onNewMessage }) {
         if (!messages?.length) return
         const formatted = messages.map(m => ({
           id:   m.id,
-          from: m.from_id === user.id ? 'me' : 'them',
+          from: String(m.fromId) === String(user.id) ? 'me' : 'them',
           text: m.text,
-          time: new Date(m.created_at * 1000).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }),
+          time: new Date(m.createdAt).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' }),
           historical: true,
         }))
         setConversations(prev => ({

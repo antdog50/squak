@@ -8,7 +8,7 @@ const PORT             = 3001
 const JWT_SECRET       = 'commsapp_jwt_secret_changeme_2024'
 const LK_API_KEY       = 'devkey'
 const LK_API_SECRET    = 'devsecret_commsapp_localdev_key123'
-const LK_HOST          = 'ws://localhost:7880'
+const LK_HOST          = 'ws://157.245.0.170:7880'
 const MAX_FILE_SIZE    = 100 * 1024 * 1024
 
 let db = null

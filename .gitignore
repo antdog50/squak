@@ -2,3 +2,7 @@ node_modules
 dist 
 livekit-server.exe 
 server/*.db 
+release/
+livekit_1.7.2_linux_amd64.tar.gz
+livekit-server
+server/*.db

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Zap, ArrowRight, UserPlus, LogIn, Eye, EyeOff } from 'lucide-react'
 
-const API = 'http://localhost:3001'
+const API = 'https://squak.io'
 
 export default function LoginScreen({ onLogin }) {
   const [mode, setMode]         = useState('login')   // 'login' | 'register'
@@ -151,7 +151,7 @@ export default function LoginScreen({ onLogin }) {
         </button>
 
         <div style={{ fontSize: 11, color: 'var(--text-muted)', marginTop: 16, fontFamily: 'var(--font-mono)' }}>
-          connecting to localhost:3001
+          connecting to squak.io
         </div>
       </div>
     </div>

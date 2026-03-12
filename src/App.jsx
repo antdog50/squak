@@ -12,15 +12,14 @@ export default function App() {
   const [user, setUser]                   = useState(null)
   const [activeContact, setActiveContact] = useState(null)
   const [activePanel, setActivePanel]     = useState('chat')
-  const [unread, setUnread]               = useState({}) // socketId -> count
+  const [unread, setUnread]               = useState({})
 
-  // Restore session from localStorage
   useEffect(() => {
     const token    = localStorage.getItem('comms_token')
     const username = localStorage.getItem('comms_username')
     const id       = localStorage.getItem('comms_userId')
     if (token && username) {
-      setUser({ token, username, id: parseInt(id) })
+      setUser({ token, username, id: id })
     }
   }, [])
 
@@ -58,9 +57,15 @@ export default function App() {
             unread={unread}
           />
           <main style={{ flex: 1, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-            {activePanel === 'chat'  && <ChatPanel contact={activeContact} user={user} onNewMessage={addUnread} />}
-            {activePanel === 'voice' && <VoicePanel user={user} />}
-            {activePanel === 'files' && <FilePanel contact={activeContact} />}
+            <div style={{ display: activePanel === 'chat' ? 'flex' : 'none', flex: 1, overflow: 'hidden' }}>
+              <ChatPanel contact={activeContact} user={user} onNewMessage={addUnread} />
+            </div>
+            <div style={{ display: activePanel === 'voice' ? 'flex' : 'none', flex: 1, overflow: 'hidden' }}>
+              <VoicePanel user={user} />
+            </div>
+            <div style={{ display: activePanel === 'files' ? 'flex' : 'none', flex: 1, overflow: 'hidden' }}>
+              <FilePanel contact={activeContact} />
+            </div>
           </main>
         </div>
       </div>
